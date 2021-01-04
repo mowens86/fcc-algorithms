@@ -36,16 +36,16 @@ function rot13(str) {
     // Add 13
     let plusThirteen = rot + 13;
 
-      // Rest math if numbers go over 90 and start at beginning of alphabet
+      // Reset math if numbers go over 90 and start at beginning of alphabet
       let temp = (plusThirteen - 90) + 64;
 
-      // Push into translation array
+      // Push into adjustedNumbers array
       adjustedNumbers.push(temp);
 
       // Conditional for spaces and punctuation
     } else if (rot <= 64) {
 
-      // Push any number under unicode of 64 and under into adjustednUmbers array 
+      // Push any number under unicode of 64 and under into adjustedNumbers array 
       adjustedNumbers.push(rot);
 
     } else {
